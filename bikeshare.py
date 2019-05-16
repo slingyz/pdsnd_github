@@ -119,7 +119,7 @@ def main():
         df['day_of_week']   = df['Start Time'].dt.weekday_name
         df['Start Time']    = df['Start Time'].dt.time
         df['End Time']      = df['End Time'].dt.time
-        
+
         # filter by month if applicable
         if month != 'all':
             # use the index of the months list to get the corresponding int
@@ -236,7 +236,7 @@ def main():
         print('Wow that\'s young!')
 
         common_year = currentYear - df[z].mode()
-        print('\nMost common age of users in data set is {} years old'.format(common_year))
+        print('\nMost common age of users in data set is {} years old'.format(str(common_year)))
 
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
@@ -286,7 +286,7 @@ def main():
     #to add time delay to slow down the bombard of text to the user (and for fun!)
         time.sleep(1)
         print('...executing task...')
-        time.sleep(4)
+        time.sleep(3)
         print('.........................Complete!\n')
         time.sleep(2)
 
