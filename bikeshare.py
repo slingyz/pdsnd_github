@@ -286,15 +286,15 @@ def main():
     #to add time delay to slow down the bombard of text to the user (and for fun!)
         time.sleep(1)
         print('...executing task...')
-        time.sleep(3)
-        print('.........................Complete!\n')
         time.sleep(2)
+        print('.........................Complete!\n')
+        time.sleep(1)
 
     def time_delay_short():
     #to add time delay to slow down the bombard of text to the user (and for fun!)
         time.sleep(1)
         print('...executing task...')
-        time.sleep(2)
+        time.sleep(1)
         print('....................Complete!\n')
         time.sleep(1)
 
