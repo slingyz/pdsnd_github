@@ -141,7 +141,7 @@ def main():
         print('\nCalculating The Most Frequent Times of Travel for: \n City:  {}\n Month: {}\n Day:   {}'.format(city,month,day))
 
         start_time = time.time()
-        time_delay_long()
+        time_delay_short()
         #display the most common month
         most_common_month = df['month'].mode()[0]
         print('Most Common month: \n', most_common_month)
@@ -265,7 +265,7 @@ def main():
 
         print('\nAnalyzing for number of blank fields in the raw dataset...\n')
 
-        time_delay_long()
+        time_delay_short()
 
         nan_count = df.isnull().sum()
         print ('\nNumber of blank fields of each column in our dataset:\n', nan_count)
@@ -277,18 +277,18 @@ def main():
 
         print ('\nWe will now drop the rows with blanks from the dataset so that the calculated statistics will not be skewed...\n')
         df.dropna(axis = 0, inplace = True)
-        time_delay_long()
+        time_delay_short()
 
         numOfRows = df.shape[0]
         print('\nThe modified data set is now {} rows long!'.format(numOfRows))
 
-    def time_delay_long():
+    #def time_delay_long():
     #to add time delay to slow down the bombard of text to the user (and for fun!)
-        time.sleep(1)
-        print('...executing task...')
-        time.sleep(2)
-        print('.........................Complete!\n')
-        time.sleep(1)
+    #    time.sleep(1)
+    #    print('...executing task...')
+    #    time.sleep(2)
+    #    print('.........................Complete!\n')
+    #    time.sleep(1)
 
     def time_delay_short():
     #to add time delay to slow down the bombard of text to the user (and for fun!)
